@@ -59,7 +59,6 @@ img[0].style.cssText = `
 //   grid-column-end: 5;
 //   grid-row-start: 1;
 //   grid-row-end: 3;
-
 // 	}`;
 img[1].style.cssText = `
   display: block;  
@@ -73,7 +72,6 @@ img[1].style.cssText = `
 //   grid-column-end: 7;
 //   grid-row-start: 1;
 //   grid-row-end: 3;
-
 // 	}`;
 img[2].style.cssText = `
   display: block;  
