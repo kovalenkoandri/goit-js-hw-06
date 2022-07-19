@@ -16,12 +16,21 @@
 
 // Category: Technologies
 // Elements: 5
-
-console.log('Number of categories:', document.body.querySelectorAll('.item').length, '\n '); 
-console.log('Category:', document.body.querySelectorAll('h2')[0].textContent);
-console.log('Category:', document.body.querySelectorAll('ul')[1].getElementsByTagName('li').length, '\n\n');
-console.log('Category:', document.body.querySelectorAll('h2')[1].textContent);
-console.log('Category:', document.body.querySelectorAll('ul')[2].querySelectorAll('li').length, ' \n ');
-console.log('Category:', document.body.querySelectorAll('h2')[2].textContent);
-console.log('Category:', document.body.querySelectorAll('ul')[3].children.length);
+const listItems = document.body.querySelectorAll('.item');
+console.log('Number of categories:', listItems.length, '\n '); 
+console.log('Category:', document.body.querySelectorAll('ul'));
+listItems.forEach((element) => {
+  console.log('Category:', element.children[0].textContent);
+  console.log('Category:', element.children[1].querySelectorAll('li').length, '\n\n');
+});
+// listItems.forEach((e, i) => {
+//   console.log('Category:', document.body.querySelectorAll('h2')[i].textContent);
+//   console.log('Category:', document.body.querySelectorAll('ul')[i+1].querySelectorAll('li').length, '\n\n');
+// });
+// console.log('Category:', document.body.querySelectorAll('h2')[0].textContent);
+// console.log('Category:', document.body.querySelectorAll('ul')[1].getElementsByTagName('li').length, '\n\n');
+// console.log('Category:', document.body.querySelectorAll('h2')[1].textContent);
+// console.log('Category:', document.body.querySelectorAll('ul')[2].querySelectorAll('li').length, ' \n ');
+// console.log('Category:', document.body.querySelectorAll('h2')[2].textContent);
+// console.log('Category:', document.body.querySelectorAll('ul')[3].children.length);
 
